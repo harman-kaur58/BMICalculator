@@ -14,14 +14,62 @@
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row mt-5 justify-content-center">
             <div class="col">
-                <h1>BMI Calculator</h1>
+                <h1 class="text-center text-danger">BMI CALCULATOR</h1>
+                <h3 class="text-center text-danger"> Body Mass Index</h3>
             </div>
         </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-5">
+                <form>
+                    <div>
+                        <h3>Gender</h3>
+                    </div>
+                    <div class="btn-group" role="group">
+
+                        <input type="radio" class="btn-check" name="user_gender" id="male" value="male"
+                            autocomplete="off" checked>
+                        <label class="btn btn-outline-success" for="male">Male</label Required>
+
+                        <input type="radio" class="btn-check" name="user_gender" id="female" value="female"
+                            autocomplete="off">
+                        <label class="btn btn-outline-success" for="female">Female</label Required>
+                    </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="mb-3">
+                    <h4><label for="age" class="form-label">Age</label></h4>
+                    <input type="number" class="form-control" id="age" name="user_age" Required maxlength="3">
+                    <span id="Age_Error" style="color:red;"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row  mt-3">
+            <div class="col-md-5">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"></label>
+                    <input type="number" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Password</label>
+                    <input type="number" class="form-control" id="">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        </form>
     </div>
-
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
